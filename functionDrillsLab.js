@@ -95,10 +95,10 @@ const compareNums = (x, y) => {
 
 //CODE HERE
 function add (x, y){
-  return Number(x) + Number(y)
+  return +x + +y
 }
 let sum = add(1, 2)
-console.log(sum)
+console.log('sum: ' + sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -331,8 +331,8 @@ upperCaseMe(sampleString)
 */
 
 function emailCheck (email){
-  let emailStr = String(email)
-  emailStr = emailStr.trim()
+  let emailStr = String(email).trim()
+  // emailStr = emailStr.trim()
   console.log(emailStr)
   if(emailStr.includes("@")){
     return "Email verified"
@@ -340,7 +340,7 @@ function emailCheck (email){
     return " must provide a valid email address"
   }
 }
-  console.log(emailCheck(" email.com" ))
+  console.log(emailCheck('     email@.com'))
 
 
 ////////////////// PROBLEM 19 ////////////////////
